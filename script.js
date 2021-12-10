@@ -1,5 +1,6 @@
 // Create Countdown
-let isStarted = false;
+var vid = document.getElementById("music");
+vid.volume = 0.2;
 var Countdown = {
 
 	// Backbone-like structure
@@ -45,7 +46,7 @@ var Countdown = {
 
 		this.countdown_interval = setInterval(function () {
 
-			if (that.total_seconds > 0 && isStarted) {
+			if (that.total_seconds > 0) {
 
 				--that.values.seconds;
 
