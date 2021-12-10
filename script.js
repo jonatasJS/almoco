@@ -1,7 +1,6 @@
 // Create Countdown
-var vid = document.getElementById("music");
-vid.volume = 0.2;
-var Countdown = {
+const vid = document.getElementById("music");
+const Countdown = {
 
 	// Backbone-like structure
 	$el: $('.countdown'),
@@ -142,3 +141,5 @@ var Countdown = {
 // Let's go !
 Countdown.init()
 //document.getElementById('title').addEventListener('click', () => Countdown.init());
+
+vid.volume = 0.2;
