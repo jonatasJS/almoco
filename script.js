@@ -1,4 +1,6 @@
 // Create Countdown
+const horas = prompt('Total de horas?');
+const minutos = prompt('Total de minutos?');
 const vid = document.getElementById("music");
 const body = document.querySelector('body');
 let count = 0;
@@ -23,8 +25,8 @@ const Countdown = {
 
 		// Init countdown values
 		this.values = {
-			hours: 0,//this.$.hours.parent().attr('data-init-value'),
-			minutes: 30,//this.$.minutes.parent().attr('data-init-value'),
+			hours: horas || 0,//this.$.hours.parent().attr('data-init-value'),
+			minutes: minutos || 30,//this.$.minutes.parent().attr('data-init-value'),
 			seconds: 0,//this.$.seconds.parent().attr('data-init-value'),
 		};
 
