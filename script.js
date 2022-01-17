@@ -147,7 +147,7 @@ Countdown.init();
 setInterval(() => {
 	body.style.background = `rgb(29, 28, 20) url("./images/${count}.jpg") no-repeat fixed`;
 	body.style.backgroundSize = 'cover';
-	if (count == 10) return count = 0;
+	if (count == 9) return count = 0;
 	console.log(count)
 	count = count + 1;
 }, 5000);
