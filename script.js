@@ -1,5 +1,7 @@
 // Create Countdown
 const vid = document.getElementById("music");
+const body = document.querySelector('body');
+let count = 0;
 const Countdown = {
 
 	// Backbone-like structure
@@ -139,7 +141,14 @@ const Countdown = {
 };
 
 // Let's go !
-Countdown.init()
+Countdown.init();
+setInterval(() => {
+	body.style.background = `rgb(29, 28, 20) url("./images/${count}.jpg") no-repeat fixed`;
+	body.style.backgroundSize = 'cover';
+	if (count == 10) return count = 0;
+	console.log(count)
+	count = count + 1;
+}, 5000);
 //document.getElementById('title').addEventListener('click', () => Countdown.init());
 
 vid.volume = 0.2;

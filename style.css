@@ -1,15 +1,29 @@
 body {
-  background-color: #f2f1ed;
+  background: rgb(29, 28, 20) url("./images/0.jpg") no-repeat fixed;
+  background-size: cover;
+  transition: .5s all linear;
+  width: 100vw;
+  height: 100vh;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
 }
 
 .wrap {
-  position: absolute;
-  bottom: 0;
-  top: 0;
-  left: 0;
-  right: 0;
-  margin: auto;
-  height: 310px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    bottom: 0;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
 }
 
 a {
@@ -21,16 +35,22 @@ h1 {
   margin-bottom: 60px;
   text-align: center;
   font: 300 2.25em "Lato";
+  font-weight: bold;
   text-transform: uppercase;
+  backdrop-filter: blur(5px);
+  padding: 5px 10px;
+  border-radius: 10px;
+  background: rgba(127.5, 127.5, 127.5, .2);
 }
 h1 strong {
-  font-weight: 400;
-  color: #ea4c4c;
+  font-weight: bold;
+  color: #ea4c4c !important;
 }
 
 h2 {
   margin-bottom: 80px;
   text-align: center;
+  font-weight: bold;
   font: 300 0.7em "Lato";
   text-transform: uppercase;
 }
@@ -54,7 +74,7 @@ h2 strong {
   display: block;
   margin-bottom: 15px;
   font: normal 0.94em "Lato";
-  color: #1a1a1a;
+  color: rgb(186, 183, 178);
   text-transform: uppercase;
 }
 .countdown .figure {
@@ -79,7 +99,7 @@ h2 strong {
   margin: auto;
   font: normal 5.94em/107px "Lato";
   font-weight: 700;
-  color: #de4848;
+  color: #de4848 !important;
 }
 .countdown .figure .top:after,
 .countdown .figure .bottom-back:after {
@@ -94,7 +114,7 @@ h2 strong {
 }
 .countdown .figure .top {
   z-index: 3;
-  background-color: #f7f7f7;
+  background-color: rgb(20, 21, 22);
   transform-origin: 50% 100%;
   -webkit-transform-origin: 50% 100%;
   -moz-border-radius-topleft: 10px;
@@ -126,7 +146,7 @@ h2 strong {
   top: 0;
   height: 50%;
   overflow: hidden;
-  background-color: #f7f7f7;
+  background-color: rgb(20, 21, 22);
   -moz-border-radius-topleft: 10px;
   -webkit-border-top-left-radius: 10px;
   border-top-left-radius: 10px;
