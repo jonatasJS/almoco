@@ -75,7 +75,7 @@ h2 strong {
   display: block;
   margin-bottom: 15px;
   font: normal 0.94em "Lato";
-  color: white;
+  color: white !important;
   text-transform: uppercase;
   backdrop-filter: blur(5px);
   padding: 5px 10px;
