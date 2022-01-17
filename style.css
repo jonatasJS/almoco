@@ -76,6 +76,10 @@ h2 strong {
   font: normal 0.94em "Lato";
   color: rgb(186, 183, 178);
   text-transform: uppercase;
+  backdrop-filter: blur(5px);
+  padding: 5px 10px;
+  border-radius: 10px;
+  background: rgba(127.5, 127.5, 127.5, .2);
 }
 .countdown .figure {
   position: relative;
