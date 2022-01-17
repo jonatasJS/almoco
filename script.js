@@ -1,6 +1,6 @@
 // Create Countdown
-const horas = prompt('Total de horas?');
-const minutos = prompt('Total de minutos?');
+const horas = prompt('Total de horas?', '');
+const minutos = prompt('Total de minutos?', '');
 const vid = document.getElementById("music");
 const body = document.querySelector('body');
 let count = 0;
