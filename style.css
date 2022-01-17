@@ -49,6 +49,7 @@ h1 strong {
 
 h2 {
   margin-bottom: 80px;
+  color: white;
   text-align: center;
   font-weight: bold;
   font: 300 0.7em "Lato";
@@ -74,7 +75,7 @@ h2 strong {
   display: block;
   margin-bottom: 15px;
   font: normal 0.94em "Lato";
-  color: rgb(186, 183, 178);
+  color: white;
   text-transform: uppercase;
   backdrop-filter: blur(5px);
   padding: 5px 10px;
