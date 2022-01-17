@@ -379,7 +379,7 @@
     // Let's go !
     Countdown.init();
     setInterval(() => {
-      body.style.background = `rgb(29, 28, 20) url("./images/${count === 5 ? 1 : count}.jpg") no-repeat fixed`;
+      body.style.background = `rgb(29, 28, 20) url("../images/${count === 5 ? 1 : count}.jpg") no-repeat fixed`;
       body.style.backgroundSize = 'cover';
       if (count == 9) return count = 0;
       console.log(count)
