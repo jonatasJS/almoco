@@ -25,8 +25,8 @@ const Countdown = {
 
 		// Init countdown values
 		this.values = {
-			hours: horas || 0,//this.$.hours.parent().attr('data-init-value'),
-			minutes: minutos || 30,//this.$.minutes.parent().attr('data-init-value'),
+			hours: horas || 1,//this.$.hours.parent().attr('data-init-value'),
+			minutes: minutos || 12,//this.$.minutes.parent().attr('data-init-value'),
 			seconds: 0,//this.$.seconds.parent().attr('data-init-value'),
 		};
 
