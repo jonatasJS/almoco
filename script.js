@@ -2,8 +2,10 @@
 const horas = prompt('Total de horas?', '');
 const minutos = prompt('Total de minutos?', '');
 const vid = document.getElementById("music");
+const icon = document.getElementById("icon");
 const body = document.querySelector('body');
 let count = 0;
+let countTitle = 0;
 const Countdown = {
 
 	// Backbone-like structure
@@ -148,9 +150,18 @@ setInterval(() => {
 	body.style.background = `rgb(29, 28, 20) url("./images/${count}.jpg") no-repeat fixed`;
 	body.style.backgroundSize = 'cover';
 	if (count == 9) return count = 0;
+
 	console.log(count)
 	count = count + 1;
 }, 5000);
+setInterval(() => {
+	icon.href = `/favicon/sprites/tile${countTitle}.png`;
+
+	if (countTitle == 13) return countTitle = 0;
+	console.log("\n\ncountTitle");
+	console.log(countTitle);
+	countTitle = countTitle + 1;
+}, 1000);
 //document.getElementById('title').addEventListener('click', () => Countdown.init());
 
 vid.volume = 0.2;

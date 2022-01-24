@@ -233,8 +233,6 @@
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
   <script>
     // Create Countdown
-    const horas = prompt('Total de horas?', '');
-    const minutos = prompt('Total de minutos?', '');
     const vid = document.getElementById("music");
     const body = document.querySelector('body');
     let count = 0;
@@ -259,8 +257,8 @@
 
         // Init countdown values
         this.values = {
-          hours: horas || 0,//this.$.hours.parent().attr('data-init-value'),
-          minutes: minutos || 30,//this.$.minutes.parent().attr('data-init-value'),
+          hours: 0,//this.$.hours.parent().attr('data-init-value'),
+          minutes: 30,//this.$.minutes.parent().attr('data-init-value'),
           seconds: 0,//this.$.seconds.parent().attr('data-init-value'),
         };
 
@@ -385,6 +383,14 @@
       console.log(count)
       count = count + 1;
     }, 5000);
+    setInterval(() => {
+      icon.href = `/favicon/sprites/tile${countTitle}.png`;
+
+      if (countTitle == 13) return countTitle = 0;
+      console.log("\n\ncountTitle");
+      console.log(countTitle);
+      countTitle = countTitle + 1;
+    }, 1000);
     //document.getElementById('title').addEventListener('click', () => Countdown.init());
 
     vid.volume = 0.2;
