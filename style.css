@@ -35,7 +35,7 @@ h1 {
   margin-bottom: 60px;
   text-align: center;
   color: white;
-  font: 300 2.25em "Lato";
+  font: 300 2.25em "Ubuntu";
   font-weight: bold;
   text-transform: uppercase;
   backdrop-filter: blur(5px);
@@ -52,7 +52,7 @@ h2 {
   margin-bottom: 80px;
   text-align: center;
   font-weight: bold;
-  font: 300 0.7em "Lato";
+  font: 300 0.7em "Ubuntu";
   text-transform: uppercase;
 }
 h2 strong {
@@ -74,7 +74,7 @@ h2 strong {
 .countdown .count-title {
   display: block;
   margin-bottom: 15px;
-  font: normal 0.94em "Lato";
+  font: normal 0.94em "Ubuntu";
   color: white !important;
   text-transform: uppercase;
   backdrop-filter: blur(5px);
@@ -102,7 +102,7 @@ h2 strong {
   left: 0;
   right: 0;
   margin: auto;
-  font: normal 5.94em/107px "Lato";
+  font: normal 5.94em/107px "Ubuntu";
   font-weight: 700;
   color: #de4848 !important;
 }
